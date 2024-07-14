@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d35a5a;
+    margin: 0;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #515050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.card.flipped {
+    background-color: #ffffff;
+}
